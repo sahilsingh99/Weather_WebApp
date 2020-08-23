@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <h1>Weather Here.</h1>
+        </div>
+        <div class = "controls">
+            <form method="POST">
+                <input name = "city" placeholder="City Name" type = "text" required>
+                <button>Search!</button>
+            </form>
+        </div>
+        <div class = "main">
+            <div class = "content">
+                <div class = "split">
+                    <div class = "split1">
+                        <img src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt = "img">
+                    </div>
+                    <div class = "split2">
+                        <% if(errors) { %>
+                            <p class="errors">Please enter a valid city</p>
+                        <% } else { %>
+                            <p class = "cname"> City : <%= weather.city %></p>
+                            <p class = "ctemp"> Temp : <%= weather.temp %>° F</p>
+                            <p class = "cdesc"> Desc : <%= weather.desc %> </p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

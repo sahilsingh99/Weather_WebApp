@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(160, 245, 186);
+    margin-top: 70px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 60%;
+    margin: 0px auto;
+    text-shadow: 5px 10px 8px #888888;
+}
+
+.header{
+    padding: 0px;
+    font-size: 2em;
+    height: 140px;
+    background-color: rgb(140, 163, 236);
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 70px;
+}
+
+.header h1{
+    margin: 0px;
+    padding: 25px;
+}
+
+.controls form{
+    padding: 2em;
+    box-shadow: 5px 10px 8px #888888;
+    margin-bottom: 70px;
+}
+
+.controls button{
+    border-radius: 0px;
+    font-size: 1.3em;
+    font-family: serif;
+    background-color: rgb(140, 163, 236);
+}
+
+.controls input{
+    border-radius: 0px;
+    font-size: 1.3em;
+    font-family: serif;
+}
+ 
+.main{
+    height: 120px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: rgb(140, 163, 236);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.main .split{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 5px;
+}
+.main .split1{
+    flex: 1;
+}
+.main .split2{
+    font-family: serif;
+    flex-direction: column;
+    display: flex;
+    align-items:flex-start;
+    flex: 1.6;
+}
+
+p{
+    font: 1.2em sans-serif;
+    margin: 0px 0px 3px 0px;
+}
+
+p .errors{
+    font: 1.2em sans-serif;
+    color: red;
+    margin: 0px 0px 3px 0px;
+}

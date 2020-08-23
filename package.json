@@ -1,0 +1,21 @@
+{
+  "name": "weather-webapp",
+  "version": "1.0.0",
+  "description": "using an api to get weather data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahil Kundu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}
