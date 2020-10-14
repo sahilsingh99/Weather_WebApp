@@ -54,6 +54,6 @@ app.post('/',(req, res) => {
 
 
 // set listener
-app.listen(3000, (res,req) => {
+app.listen(process.env.PORT || 3000, (res,req) => {
     console.log("app is started");
 })
